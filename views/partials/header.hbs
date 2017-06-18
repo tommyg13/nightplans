@@ -1,0 +1,24 @@
+<div id="nav"class="container" >
+    <a href="/"><img src="https://res.cloudinary.com/dlvavuuqe/image/upload/v1497781112/8fe41502-e30a-4f86-9a42-53f1560757db_wi9r30.png" class="logo"></a>
+     <a id="logout" href="/logout">Logout</a>
+   {{# if user}}
+   <a id="logout1" href="/logout">Logout</a>
+    
+{{else}} 
+  <div id="login" class="clearfix" >
+       <form action="/login" method="post" id="contact_form" >
+        <input type="hidden", name="_csrf", value="{{csrfToken}}">  
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" class="form-control" name="email" required>
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" name="password" required>
+        </div>
+<br />
+        <button type="submit" id="signin" class="btn btn-warning"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</button>
+    </form>
+</div>
+{{/if}}
+</div>

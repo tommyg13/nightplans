@@ -1,0 +1,182 @@
+html, body {
+  height: 100%;
+
+}
+
+body {
+background-image: url(https://res.cloudinary.com/dlvavuuqe/image/upload/v1497698934/her1_bneskr.jpg);
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+color:white;
+}
+
+#mainH2, #errorH1 {
+  padding-top: 100px;
+}
+
+#reg a {
+  font-size:20px;
+}
+
+#signup {
+  display: flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  padding: 20px;
+}
+
+#signup input {
+  margin:5px;
+}
+
+#loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  display: none;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+a, a:hover{
+  text-decoration: none!important;
+  }
+
+label {
+      margin-top: 4px;
+}
+
+.logo {
+  max-width: 100%;
+  
+}
+
+#logout {
+  display: none;
+}
+
+.top .fa {
+  font-size: 30px;
+  padding:3px;
+}
+
+#main {
+  padding-bottom: 30px;
+}
+
+.mainInfo{
+  display: flex;
+  padding-top: 20px;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.mainInfo1 {
+  align-self:center;
+  max-width: 100%;
+}
+
+.mainImg {
+  width: 150px;
+  height: 150px;
+  max-width: 100%;
+  max-height: 150px;
+  border-radius: 10px;
+  border: 3px solid #fff;  
+}
+
+.rating {
+  padding:5px;
+  font-weight: bold;
+  color:#FFED85;
+}
+
+
+.mainName {
+  padding:30px;
+  padding-right: 10px;
+    font-weight: bold;
+}
+
+select {
+  height:30px;
+  width: 175.333px ;
+}
+
+.mainAddress, .green, .red {
+  padding-left:30px;
+}
+
+
+.go, .remove {
+  margin-left: 30px;
+  margin-right: 5px;
+}
+
+.green {
+  color: green;
+  padding-right: 32px;
+  padding-top: 20px;
+}
+
+.red {
+  color: red;
+  padding-right: 32px;
+    padding-top: 20px;
+}
+
+
+#nav {
+  display: flex;
+  background:black;
+  justify-content:space-between;
+  max-width: 100%;
+  width: 100%;
+  color:white;
+  height: 90px;
+  align-items:center;
+  padding:10px;
+}
+
+#login form{
+  display: flex;
+}
+
+#signin {
+      align-self: center;
+    margin-top: 19px;
+}
+
+#myModal {
+  color:black;
+}
+
+@media screen and (min-width:992px) {
+  .mainInfo {
+    padding-left: 250px;
+  }
+}
+
+@media screen and (min-width:767px) {
+.mainAddress {
+  width:500px;
+  word-wrap: break-word;
+  word-break: break-all;
+  max-width: 100%;
+}
+
+}
